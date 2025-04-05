@@ -2,36 +2,24 @@
 
 ## Introduction
 
-Make development boring process and exiting journey.
+Personal case study talk about
 
-**Why it matters:**
+- Domain Driven Design
+- Command and Query Responsibility Segregation
+- Type hint as test driven development shortcuts
 
-- Brings domain upfront.
-- Develop language development team and stakeholders understand.
-- Separate infrastructure responsibilities.
+## Install
 
-**Go deeper:**
+You likely need `texlive` libraries, `pandoc` and `pygments`.
 
-- Today's talk focus on *strategy*, or the why on decision making.
-- It is a sequel to my last year *tactics* [devbg talk](https://github.com/dpopchev/gilded-rose-kata).
-- Will use my own case study, one on the modern science cutting edge.
-- Will touch base with topics:
+```bas
+git clone --depth 1 https://github.com/dpopchev/functional-ddd
+cd functional-ddd
+make presentation
+# find it in build/presentation.pdf
+```
 
-  - Machine Learning
-  - Application of data structures
-  - Design patterns
-  - Type hints
-  - Good practices
-  - Data science
-
-## Agenda
-
-- Fundamental .
-- Domain Driven Design.
-- Command Query Responsibility Segregation.
-- Type hints as test driven development shortcuts.
-
-# References
+# Acknowledgment
 
 - [Alexeygumirov@github](https://github.com/alexeygumirov/pandoc-beamer-how-to?tab=readme-ov-file)
 - [Beamer by Corentin Lothode](https://lothode.pages.math.cnrs.fr/pageperso/blog/beamer-with-pandoc/)
