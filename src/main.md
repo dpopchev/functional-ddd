@@ -11,75 +11,22 @@ colortheme: dolphin
 fonttheme: structurebold
 fontsize: 8pt
 fontfamilyoptions: default
-# fontfamily:
-# mainfont:
-# sansfont:
-# monofont:
-# mathfont:
-# urlcolor: red
-# linkstyle: bold
-# lang: en-US
-section-titles: true
+section-titles: false
 toc: true
 aspectratio: 169
-# slide-level: 2
-output: beamer_presentation
+slide-level: 2
+output:
+    beamer_presentation:
+        variant: markdown_strict+pipe_tables+backtick_code_blocks+auto_identifiers+strikeout+yaml_metadata_block+implicit_figures+all_symbols_escapable+link_attributes+smart+fenced_divs
+dpi: 300
+pdf-engine-opt: -shell-escape
 header-includes:
     - \usepackage{minted}
 #   - \AtBeginSection[] { \begin{frame}<beamer>{} \tableofcontents[currentsection] \end{frame} }
 ---
 
-# Section with two slides
+# Functional Domain Driven Design
 
-## Slide 1.1
-
-```python
-def hello_word():
-    return "Hello word"
-```
-
-## Slide 1.2
-
-Some content
-
-# Section with one slide
-
-## Slide 2.2
-
-Content of another section
-
-# Section with several slides
-
-@include: fff.md
-
-# Section without slides
-
-# Section with one slide
+@include: functional-domain-driven-design.md
 
 ## Thank you
-
-
-# This program adds two numbers
-
-## aslide
-
-```python
-num1 = 1.5
-num2 = 6.3
-```
-
-# Add two numbers
-
-## aslide
-
-```python
-sum = num1 + num2
-```
-
-# Display the sum
-
-## aslide
-
-```python
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
-```
