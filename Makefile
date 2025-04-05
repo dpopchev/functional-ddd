@@ -67,12 +67,20 @@ presentation_name := presentation
 presentation_format := pdf
 presentation_object := $(build_dir)/$(presentation_name).md
 presentation_target := $(build_dir)/$(presentation_name).$(presentation_format)
+# NOTE duplication with yaml block warning only done because not all are taking
+# NOTE effect using the version of pandoc 2.9.1
+pandoc_options := --standalone
+pandoc_options += --slide-level=2
+pandoc_options += --listings
+pandoc_options += --shift-heading-level=0
+pandoc_options += --columns=50
+pandoc_options += --pdf-engine-opt=-shell-escape
 
 .PHONY: presentation
 presentation: $(presentation_target) | $(build_dir)
 
 $(presentation_target): $(presentation_object) | $(build_dir)
-	@pandoc -t beamer $< -o $@ --pdf-engine-opt=-shell-escape
+	@pandoc -t beamer $< -o $@ $(pandoc_options)
 	@$(call log,'build presentation',$(donestr))
 
 $(presentation_object): $(src_dir)/main.md $(wildcard $(src_dir)/*.md) | $(build_dir)
