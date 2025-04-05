@@ -30,3 +30,8 @@ Make development boring process and exiting journey.
 - Domain Driven Design.
 - Command Query Responsibility Segregation.
 - Type hints as test driven development shortcuts.
+
+# References
+
+- [Alexeygumirov@github](https://github.com/alexeygumirov/pandoc-beamer-how-to?tab=readme-ov-file)
+- [Beamer by Corentin Lothode](https://lothode.pages.math.cnrs.fr/pageperso/blog/beamer-with-pandoc/)
