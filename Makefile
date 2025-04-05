@@ -72,7 +72,7 @@ presentation_target := $(build_dir)/$(presentation_name).$(presentation_format)
 presentation: $(presentation_target) | $(build_dir)
 
 $(presentation_target): $(presentation_object) | $(build_dir)
-	@pandoc -t beamer $< --pdf-engine-opt=-shell-escape -o $@
+	@pandoc -t beamer $< -o $@ --pdf-engine-opt=-shell-escape
 	@$(call log,'build presentation',$(donestr))
 
 $(presentation_object): $(src_dir)/main.md $(wildcard $(src_dir)/*.md) | $(build_dir)
