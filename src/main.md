@@ -24,7 +24,8 @@ toc: true
 aspectratio: 169
 # slide-level: 2
 output: beamer_presentation
-# header-includes:
+header-includes:
+    - \usepackage{minted}
 #   - \AtBeginSection[] { \begin{frame}<beamer>{} \tableofcontents[currentsection] \end{frame} }
 ---
 
@@ -32,7 +33,10 @@ output: beamer_presentation
 
 ## Slide 1.1
 
-Content for the first slide.
+```python
+def hello_word():
+    return "Hello word"
+```
 
 ## Slide 1.2
 
@@ -53,3 +57,29 @@ Content of another section
 # Section with one slide
 
 ## Thank you
+
+
+# This program adds two numbers
+
+## aslide
+
+```python
+num1 = 1.5
+num2 = 6.3
+```
+
+# Add two numbers
+
+## aslide
+
+```python
+sum = num1 + num2
+```
+
+# Display the sum
+
+## aslide
+
+```python
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+```
