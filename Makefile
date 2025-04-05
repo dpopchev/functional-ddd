@@ -82,7 +82,6 @@ $(presentation_object): $(src_dir)/main.md $(wildcard $(src_dir)/*.md) | $(build
 			echo "$$mainline" >> $@; \
 			continue; \
 		fi; \
-		echo >> $@; \
 		cat $(src_dir)/"$${mainline//@include:[[:blank:]]/}" >> $@; \
 	done < "$<"
 
