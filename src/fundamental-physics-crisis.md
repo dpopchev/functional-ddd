@@ -1,4 +1,4 @@
-## Modern theory exploration is a data science challenge
+## Gravitational theory testing is a data science challenge
 
 ::: columns
 
@@ -28,6 +28,32 @@
 
 :::
 
-## Aslide about computational challenges
+### Bottom line:
+
+General relativity remains one of the best models made by human kind!
+
+## Universe is expanding faster, than expected
+
+::: columns
+
+:::: {.column width=40%}
+
+### Open questions
+
+- What is dark matter?
+- What is dark energy?
+- How to quantize gravity?
+
+::::
+
+:::: {.column width=60%}
+
+### Growing discrepancy of Hubble constant value
+
+![Hubble constant measured value timeline per method](data/images/cosmology-crisis.png){width=75%}
+
+::::
+
+:::
 
 ## Aslide about machine learning models shortcummings
