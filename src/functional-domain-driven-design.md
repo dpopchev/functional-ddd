@@ -13,7 +13,7 @@ Having a *how* toolkit is definite must have for every developer, but can get
 you only so far.
 
 Today's talk focus is the *strategy* on decision making. Will use my own
-experience as case study and cover topics:
+experience as case study, a science frontier, and cover topics:
 
 ::: columns
 
