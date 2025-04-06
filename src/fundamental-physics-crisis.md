@@ -61,9 +61,11 @@ General relativity remains one of the best models made by human kind!
 ### Why it matters:
 
 - Different data sources -- different format.
-- New models demand recalculation.
 - More often the software solutions are fragile.
+- Problem is not limited to science.
 
 ### Bottom line:
 
-Modern problems require modern solutions to allow resilience and scalability.
+Modern problems require modern solutions, e.g. write $f$ such that it maps
+an elements, called inputs, from domain $X$ to some elements, called outputs,
+from codomain $Y$.
