@@ -29,6 +29,22 @@ header-includes:
 
 @include: functional-domain-driven-design.md
 
+# Fundamental Physics Crisis
+
+@include: fundamental-physics-crisis.md
+
+# Domain Driven Design
+
+@include: domain-driven-design.md
+
+# Command Query Responsibility Segregation
+
+@include: command-query-responsibility-segregation.md
+
+# Type Hints
+
+@include: type-hinting.md
+
 # Take away
 
 ## Bottom Line
