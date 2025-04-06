@@ -2,7 +2,7 @@
 
 ### Why it matters:
 
-- Involve domain experts in the development process.
+- Involve domain experts in the development.
 - Reduce cycles discussing, **not** doing, work.
 - Transform requirements discovery into two-way process.
 
@@ -37,4 +37,4 @@ experience as case study, a science frontier, and cover topics:
 
 ### Bottom line:
 
-Do more with less, lessons learned by lazy developer.
+Do more with less using others lessons.

@@ -32,7 +32,7 @@
 
 General relativity remains one of the best models made by human kind!
 
-## Universe is expanding faster, than expected
+## Universe is expanding faster, than expected...
 
 ::: columns
 
@@ -50,10 +50,20 @@ General relativity remains one of the best models made by human kind!
 
 ### Growing discrepancy of Hubble constant value
 
-![Hubble constant measured value timeline per method](data/images/cosmology-crisis.png){width=75%}
+![Hubble constant measured value per method timeline](data/images/cosmology-crisis.png){width=75%}
 
 ::::
 
 :::
 
-## Aslide about machine learning models shortcummings
+## ...and the computational demand grows too.
+
+### Why it matters:
+
+- Different data sources -- different format.
+- New models demand recalculation.
+- More often the software solutions are fragile.
+
+### Bottom line:
+
+Modern problems require modern solutions to allow resilience and scalability.
