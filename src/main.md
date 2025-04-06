@@ -24,6 +24,7 @@ pdf-engine-opt: -shell-escape
 header-includes:
     - \usepackage{minted}
 #   - \AtBeginSection[] { \begin{frame}<beamer>{} \tableofcontents[currentsection] \end{frame} }
+# https://pandoc.org/lua-filters.html#pandoc.cli.default_options
 ---
 
 # Functional Domain Driven Design
