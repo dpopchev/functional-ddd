@@ -96,3 +96,15 @@ $(presentation_object): $(src_dir)/main.md $(wildcard $(src_dir)/*.md) | $(build
 .PHONY: run-presentation-build-daemon
 run-presentation-build-daemon:
 	find $(src_dir) -type f -name '*.md' | entr make presentation
+
+image_dir := $(data_dir)/images
+images := $(wildcard $(image_dir)/*)
+image_stamps := $(patsubst $(image_dir)/%, $(stamp_dir)/%.stamp, $(images))
+
+.PHONY: normalize-images
+normalize-images: $(image_stamps)
+
+$(image_stamps): $(stamp_dir)/%.stamp: $(image_dir)/% | $(stamp_dir)
+	@convert $(image_dir)/$* -set -units PixelsPerInch -resample 300 -resize 1700x -density 300 $(image_dir)/$*
+	@touch $@
+	@$(call log,'normalize image $*',$(donestr))
