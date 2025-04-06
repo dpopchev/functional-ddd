@@ -1,21 +1,36 @@
-## Make development boring process and exiting journey.
+## Make development a collaborative process.
 
 ### Why it matters:
 
-- Brings domain upfront.
-- Develop language development team and stakeholders understand.
-- Separate infrastructure responsibilities.
+- Involve domain experts in the development process.
+- Reduce cycles discussing, **not** doing, work.
+- Transform requirements discovery into two-way process.
 
 ### Going deeper:
 
-- Today's talk focus on *strategy*, or the why on decision making.
-- It is a sequel to my last year *tactics* [devbg talk](https://github.com/dpopchev/gilded-rose-kata).
-- Will use my own case study, one on the modern science cutting edge.
-- Will touch base with topics:
+This talk is a sequel to my last year *tactics*, based on Gilded Rose Kata, [devbg talk](https://github.com/dpopchev/gilded-rose-kata).
+Having a *how* toolkit is definite must have for every developer, but can get
+you only so far.
 
-    - Machine Learning
-    - Application of data structures
-    - Design patterns
-    - Type hints
-    - Good practices
-    - Data science
+Today's talk focus is the *strategy* on decision making. Will use my own
+experience as case study and cover topics:
+
+::: columns
+
+:::: column
+
+- Machine Learning
+- Application of data structures
+- Design patterns
+
+::::
+
+:::: column
+
+- Type hints
+- Good practices
+- Data science
+
+::::
+
+:::

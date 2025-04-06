@@ -29,4 +29,8 @@ header-includes:
 
 @include: functional-domain-driven-design.md
 
-## Thank you
+# Take away
+
+## Bottom Line
+
+## QA session
