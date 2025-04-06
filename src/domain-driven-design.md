@@ -1,5 +1,11 @@
 ## Understand a domain trough its language
 
+### Why it matters
+
+- What do we want?, *everything being done*
+- When do we want it?, *now*
+- How we do it?, *simply...*; workflow with more meanders than a river
+
 ::: columns
 
 :::: column
