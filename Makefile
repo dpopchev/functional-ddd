@@ -73,7 +73,7 @@ presentation_target := $(build_dir)/$(presentation_name).$(presentation_format)
 pandoc_options := --standalone
 pandoc_options += --slide-level=2
 pandoc_options += --shift-heading-level=0
-pandoc_options += --columns=50
+pandoc_options += --columns=60
 pandoc_options += --pdf-engine-opt=-shell-escape
 
 .PHONY: presentation
