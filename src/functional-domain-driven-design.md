@@ -34,3 +34,7 @@ experience as case study, a science frontier, and cover topics:
 ::::
 
 :::
+
+### Bottom line:
+
+Do more with less, lessons learned by lazy developer.
