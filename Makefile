@@ -46,9 +46,9 @@ if [ -e .gitignore ]; then \
 	sort --unique --output .gitignore{,};\
 fi
 endef
+
 src_dir := src
 data_dir := data
-
 
 $(src_dir) $(data_dir):
 	@mkdir -p $@
@@ -94,13 +94,13 @@ $(presentation_object): $(src_dir)/main.md $(wildcard $(src_dir)/*.md) | $(build
 		cat $(src_dir)/"$${mainline//@include:[[:blank:]]/}" >> $@; \
 	done < "$<"
 
-.PHONY: run-presentation-build-daemon
-run-presentation-build-daemon:
-	find $(src_dir) -type f -name '*.md' | entr make presentation
-
 image_dir := $(data_dir)/images
 images := $(wildcard $(image_dir)/*)
 image_stamps := $(patsubst $(image_dir)/%, $(stamp_dir)/%.stamp, $(images))
+
+.PHONY: run-presentation-build-daemon
+run-presentation-build-daemon:
+	find $(src_dir) $(image_dir) -type f | entr make presentation
 
 .PHONY: normalize-images
 normalize-images: $(image_stamps)
