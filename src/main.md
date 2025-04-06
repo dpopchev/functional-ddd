@@ -19,6 +19,7 @@ output:
     beamer_presentation:
         variant: markdown_strict+pipe_tables+backtick_code_blocks+auto_identifiers+strikeout+yaml_metadata_block+implicit_figures+all_symbols_escapable+link_attributes+smart+fenced_divs
 dpi: 300
+listings: true
 pdf-engine-opt: -shell-escape
 header-includes:
     - \usepackage{minted}

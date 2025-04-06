@@ -72,7 +72,6 @@ presentation_target := $(build_dir)/$(presentation_name).$(presentation_format)
 # NOTE effect using the version of pandoc 2.9.1
 pandoc_options := --standalone
 pandoc_options += --slide-level=2
-pandoc_options += --listings
 pandoc_options += --shift-heading-level=0
 pandoc_options += --columns=50
 pandoc_options += --pdf-engine-opt=-shell-escape
