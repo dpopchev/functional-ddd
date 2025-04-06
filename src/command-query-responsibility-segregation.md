@@ -115,3 +115,10 @@ def handle_add_points(load: LoadSolution,
 
 ::::
 :::
+
+## Separated view model
+
+### Why it matters:
+
+- Reading is de-coupled from writing
+- Implement using optimized code, i.e. `SQL`

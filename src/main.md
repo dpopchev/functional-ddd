@@ -43,12 +43,29 @@ header-includes:
 
 @include: command-query-responsibility-segregation.md
 
-# Type Hints
+# Type Hinting
 
 @include: type-hinting.md
 
 # Take away
 
-## Bottom Line
+## Take away
 
-## QA session
+- Enable domain experts involvement using Domain Driven Design techniques
+- Improve your codebase adopting type hinting
+- Do to enforce mixing things that do not belong together
+- Use this presentation as a kata
+
+## Simple Functional Domain Driven Design project structure
+
+```bash
+src/gravityml/
+    gravity/commands.py # what you need to change a solution
+            events.py # what you get changing a solution
+            model.py # Point, Solution, append_point home
+            handlers.py # handle_append_point, the domain edge
+            interfaces.py # type hints
+    machine_learning/ # the ML domain, not too far fetched
+    application.py # mix the domains here
+    views.py # read model of the domains
+```
