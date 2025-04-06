@@ -53,10 +53,11 @@ data_dir := data
 $(src_dir) $(data_dir):
 	@mkdir -p $@
 
+stamp_dir := .stamps
 build_dir := build
-$(build_dir):
-	@$(call add_gitignore,$@)
+$(build_dir) $(stamp_dir):
 	@mkdir -p $@
+	@$(call add_gitignore,$@)
 
 .PHONY: clean-build ### clean build
 clean-build:
