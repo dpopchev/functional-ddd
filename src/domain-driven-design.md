@@ -118,13 +118,48 @@ class Solution:
 ```
 
 ### Bottom Line
+
 - Aggregate enforces consistency and invariants
 - Aggregate is atomic unit of persistence/database transaction/data transfer.
 
-## Commands are the verbs of a domain
+## Modify aggregates with functions
 
 ### Why it matters
 
+- Changing aggregate state likely has more rules, than maintaining consistency,
+e.g. adding new existing point is not desired.
+- Extract update logic into a function
+- Domain experts, likely, already have a term for making the change anyway.
 
+```python
+def add_points(s: Solution, ps: BlackHoleSolutionPoints) -> Solution:
+    # assume O(1) association point complexity O(n) ope
+    # compared with O(nlogn) sorting that can back fire
 
-## Aslide about machine learning
+    if ps in s:
+        raise ValueError
+
+    return Solution(ps + s.points)
+```
+## Respect the domain boundaries
+
+### Why it matters
+
+- Add what feels as belonging to the domain.
+- Think how you organize the cutlery drawer; you won't put your dirty power
+drill there would you? Regardless how handy it might be for fixing stuff around
+the kitchen.
+- It is always useful to reach out to the domain experts -- if it takes too much
+  time to explain, likely it is not the place to put it.
+
+### Big picture
+
+- Instead of putting everything in one place, e.g. `Solution` and machine
+learning models using solutions, separate. Likely the `MachineModel` will have
+its own lifecycle and persistence.
+
+```bash
+src/gravity_package/
+                    solutions/...
+                    machine_learning/...
+```
