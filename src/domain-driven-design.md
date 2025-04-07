@@ -4,7 +4,7 @@
 
 - What do we want?, *everything being done*
 - When do we want it?, *now*
-- How we are doing it now?, *simply...; \[workflow with more meanders than a river\]*
+- How we are doing it today?, *simply...; \[workflow with more meanders than a river\]*
 
 ::: columns
 
