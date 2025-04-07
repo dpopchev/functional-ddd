@@ -4,7 +4,7 @@
 
 - What do we want?, *everything being done*
 - When do we want it?, *now*
-- How we do it?, *simply...*; workflow with more meanders than a river
+- How we are doing it now?, *simply...; \[workflow with more meanders than a river\]*
 
 ::: columns
 
@@ -24,7 +24,6 @@
 - value objects
 - entities
 - aggregates
-- repositories
 
 ::::
 
@@ -32,18 +31,49 @@
 
 ### Bottom line
 
-DDD offers recipes to achieve domain expert and development team collaboration.
+Domain Driven Design is approach towards building shared mental model between
+domain expert and development team. It offers a path to collaboration.
 
 ### What is next
 
-Explore the domain of solutions for black holes.
+Case study -- Black Holes. Just for the sake of it.
+
+## Black hole premier
+
+::: columns
+
+:::: column
+
+### Equations to solve
+
+![Differential system](data/images/black-hole-system.png)
+![Coupling Function](data/images/black-hole-coupling-function.png){width=50%}
+
+
+### Bottom line
+
+- Modified equations are *very hard* to expand, solve and approximate
+- The expanded system is hardly coupled and numerically unstable
+- Computations are both time and resources demanding
+
+::::
+
+:::: column
+
+### Bifurcation
+
+![Mass vs Radius](data/images/black-hole-bifurcation.png)
+
+::::
+
+:::
 
 ## Modelling a black hole properties
 
 ### Gravity is a domain
 
-Astrophysicists are interested into compact objects observable parameters
-, e.g. mass of black hole or neutron star. Having those calculated can help
+Astrophysicists are interested into compact objects observable properties
+, e.g. mass/radius of black hole or neutron star. Having those calculated can help
 rule out theories using experimental data deviation.
 
 ::: columns
@@ -132,15 +162,15 @@ class Solution:
 
 ### Why it matters
 
-- Changing aggregate state likely has more rules, than maintaining consistency,
-e.g. adding new existing point is not desired.
+- Changing aggregate state likely has different rules, than maintaining consistency,
+e.g. adding existing point is not desired.
 - Extract update logic into a function
 - Domain experts, likely, already have a term for making the change anyway.
 
 ```python
 def add_points(s: Solution, ps: BlackHoleSolutionPoints) -> Solution:
-    # assume O(1) association point complexity O(n) ope
-    # compared with O(nlogn) sorting that can back fire
+    # assume O(1) belonging point time complexity
+    # assume best case scenario of O(nlogn) sorting
 
     if ps in s:
         raise ValueError
@@ -151,18 +181,17 @@ def add_points(s: Solution, ps: BlackHoleSolutionPoints) -> Solution:
 
 ### Why it matters
 
-- Add what feels as belonging to the domain.
-- Think how you organize the cutlery drawer; you won't put your dirty power
-drill there would you? Regardless how handy it might be for fixing stuff around
-the kitchen.
-- It is always useful to reach out to the domain experts -- if it takes too much
-  time to explain, likely it is not the place to put it.
+- Add what *feels* as belonging to the domain.
+- Think how you organize the cutlery drawer
+  - you put forks, knifes, spoons, etc; things needed to eat
+  - you do not put put power drill, despite being handy to fix stuff around kitchen
 
 ### Big picture
 
 - Instead of putting everything in one place, e.g. `Solution` and machine
 learning models using solutions, separate. Likely the `MachineModel` will have
 its own lifecycle and persistence.
+- Rule of thumb: if it takes too much time to explain, likely it is not the place to put it.
 
 ```bash
 src/gravity_package/

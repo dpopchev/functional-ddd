@@ -31,9 +31,9 @@ header-includes:
 
 @include: functional-domain-driven-design.md
 
-# Fundamental Physics Crisis
+# Exponential Data Demand
 
-@include: fundamental-physics-crisis.md
+@include: exponential-data-demand.md
 
 # Domain Driven Design
 

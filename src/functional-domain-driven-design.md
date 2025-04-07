@@ -37,4 +37,4 @@ experience as case study, a science frontier, and cover topics:
 
 ### Bottom line:
 
-Do more with less using others lessons.
+Do more with less.

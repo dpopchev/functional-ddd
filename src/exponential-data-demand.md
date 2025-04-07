@@ -44,6 +44,9 @@ General relativity remains one of the best models made by human kind!
 - What is dark energy?
 - How to quantize gravity?
 
+**Bottom Line** Although physics is not emergent, being able to quickly compute
+is a must have.
+
 ::::
 
 :::: {.column width=60%}
@@ -66,6 +69,6 @@ General relativity remains one of the best models made by human kind!
 
 ### Bottom line:
 
-Modern problems require modern solutions, e.g. write $f$ such that it maps
+Modern problems require modern solutions, e.g. write $foo$ such that it maps
 an elements, called inputs, from domain $X$ to some elements, called outputs,
 from codomain $Y$.
