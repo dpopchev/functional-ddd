@@ -67,14 +67,14 @@ header-includes:
 
 ## Simple Functional Domain Driven Design project structure
 
-```bash
+```
 src/gravityml/
-    gravity/commands.py # what you need to change a solution
-            events.py # what you get changing a solution
-            model.py # Point, Solution, append_point home
-            handlers.py # handle_append_point, the domain edge
-            interfaces.py # type hints
-    machine_learning/ # the ML domain, not too far fetched
-    application.py # mix the domains here
-    views.py # read model of the domains
+    gravity/commands.py     ; parameters to change an aggregate
+            events.py       ; messages for aggregate change
+            model.py        ; Point, Solution, append_point
+            handlers.py     ; handle_append_point
+            interfaces.py   ; type hints and other interfaces
+    machine_learning/       ; the ML domain
+    application.py          ; where domain coupling happens,
+    views.py                ; read model of the domains
 ```
