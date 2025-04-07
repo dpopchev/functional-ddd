@@ -51,10 +51,19 @@ header-includes:
 
 ## Take away
 
-- Enable domain experts involvement using Domain Driven Design techniques
+- **Enable** domain experts involvement using Domain Driven Design techniques
 - Improve your codebase adopting type hinting
-- Do to enforce mixing things that do not belong together
-- Use this presentation as a kata
+- Be critical where things belong
+- Use this presentation as a kata to explore your style
+
+## Inspiration
+
+- [Domain Modeling Made Functional](https://pragprog.com/titles/swdddf/domain-modeling-made-functional/)
+- [Robust Python](https://www.oreilly.com/library/view/robust-python/9781098100650/)
+- [Cosmic Python](https://www.cosmicpython.com/)
+- [Implementing Domain Drivend Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)
+- [Domain-Driven Design Distilled](https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420)
+- [Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy](https://www.amazon.com/Learning-Domain-Driven-Design-Aligning-Architecture/dp/1098100131)
 
 ## Simple Functional Domain Driven Design project structure
 

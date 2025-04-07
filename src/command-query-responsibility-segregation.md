@@ -83,7 +83,7 @@ s = add_points(lambda _: Solution(),
 
 ::: columns
 
-:::: column
+:::: {.column width=40%}
 
 ```python
 @dataclass(frozen=True)
@@ -101,7 +101,7 @@ COMMAND_HANDLER = {
 ```
 ::::
 
-:::: column
+:::: {.column width=60%}
 
 ```python
 def handle_add_points(load: LoadSolution,
