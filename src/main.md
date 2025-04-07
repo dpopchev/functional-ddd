@@ -78,3 +78,7 @@ src/gravityml/
     application.py          ; where domain coupling happens,
     views.py                ; read model of the domains
 ```
+
+## Thank you!
+
+QA
